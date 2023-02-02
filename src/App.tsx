@@ -1,9 +1,15 @@
+import { Header } from './components/Header'
+import { SummaryTable } from './components/SummaryTable'
 import './styles/global.css'
 
-function App() {
+export function App() {
   return (
-    <h1 className='text-2xl text-blue-500'>Typescript</h1>
+    <div className='w-screen h-screen flex justify-center items-center'>
+      <div className='w-full max-w-5xl m-auto px-6 flex flex-col gap-16'>
+        <Header />
+        <SummaryTable />
+      </div>
+    </div>
   )
 }
 
-export default App
